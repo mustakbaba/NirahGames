@@ -76,21 +76,21 @@ public class PlayerScript : MonoBehaviour
     }
     IEnumerator Move(string where)
     {
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 15; i++)
         {
             switch (where)
             {
                 case "left":
-                    gameObject.transform.RotateAround(pivLeft.transform.position, Vector3.forward, 3);
+                    gameObject.transform.RotateAround(pivLeft.transform.position, Vector3.forward, 6);
                     break;
                 case "right":
-                    gameObject.transform.RotateAround(pivRight.transform.position, Vector3.back, 3);
+                    gameObject.transform.RotateAround(pivRight.transform.position, Vector3.back, 6);
                     break;
                 case "forward":
-                    gameObject.transform.RotateAround(pivForward.transform.position, Vector3.right, 3);
+                    gameObject.transform.RotateAround(pivForward.transform.position, Vector3.right, 6);
                     break;
                 case "back":
-                    gameObject.transform.RotateAround(pivBack.transform.position, Vector3.left, 3);
+                    gameObject.transform.RotateAround(pivBack.transform.position, Vector3.left, 6);
                     break;
 
 
